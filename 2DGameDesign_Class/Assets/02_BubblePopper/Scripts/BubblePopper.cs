@@ -19,7 +19,7 @@ public class BubblePopper : MonoBehaviour
 		//Debug.Log("On Mouse down is working");
 		anim.SetBool("Pop", true);
 
-		Invoke("DestroytheBubble", 06f);
+		Invoke("DestroytheBubble", 0.6f);
 
 
 	}
