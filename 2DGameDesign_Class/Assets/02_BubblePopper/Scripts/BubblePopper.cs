@@ -10,7 +10,6 @@ public class BubblePopper : MonoBehaviour
 	private void Start()
 	{
 		anim = this.GetComponent<Animator>();
-
 		
 	}
 
