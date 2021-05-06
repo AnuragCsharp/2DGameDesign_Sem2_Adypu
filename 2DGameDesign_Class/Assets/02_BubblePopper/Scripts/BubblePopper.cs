@@ -13,12 +13,13 @@ public class BubblePopper : MonoBehaviour
 
 	public TMP_Text ScoreText;
 
+	
+
 	private void Start()
 	{
 		anim = this.GetComponent<Animator>();
 		Audio = this.GetComponent<AudioSource>();
-		ScoreHandler = FindObjectOfType<ScoreKeeper>();
-		
+		ScoreHandler = FindObjectOfType<ScoreKeeper>();		
 		
 	}
 
