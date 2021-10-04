@@ -1,26 +1,6 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
-
-trigger:
-- main
-
-pool:
-  vmImage: ubuntu-latest
-
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
-
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
-  
 - task: UnityBuildTask@3
   inputs:
-    buildTarget: 'WebGL'
-    unityProjectPath: 'F:\Github\ADYPU_2D-Sem2\2DGameDesign_Sem2_Adypu\2DGameDesign_Class'
+    buildTarget: 'standalone'
+    unityProjectPath: 'F:\Github\ADYPU_2D-Sem2\2DGameDesign_Sem2_Adypu'
     outputPath: '$(Build.BinariesDirectory)'
     outputFileName: 'drop'
